@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://startup-app-modern.vercel.app",
+  siteUrl: "http://unidad-enfermeria-das-solola.vercel.app/",
   generateRobotsTxt: true,
   devIndicators: {
     autoPrerender: false,
