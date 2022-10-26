@@ -3,7 +3,7 @@ import { jsx, Container, Flex } from "theme-ui";
 import PriceCard from "components/price-card";
 import SectionHeader from "components/section-header";
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
-import PatternBG from "assets/patternBG.png";
+//import PatternBG from "assets/patternBG.png";
 
 const packages = [
   {
@@ -41,7 +41,7 @@ export default function MisionVision({ data }) {
 const styles = {
   pricing: {
     backgroundColor: "#12203d",
-    backgroundImage: `url(${PatternBG})`,
+    backgroundImage: `url('https://store-sicombue.s3.us-west-2.amazonaws.com/patternBG.png')`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: "center center",
     backgroundSize: "cover",

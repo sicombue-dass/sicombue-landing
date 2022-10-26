@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 import { Link } from "components/link";
 import { FaPlayCircle } from "react-icons/fa";
-import BannerBG from "assets/bannerBG.png";
+//import BannerBG from "assets/bannerBG.png";
 import BannerThumb from "assets/Imagen2.png";
 
 export default function Banner() {
@@ -60,7 +60,7 @@ export default function Banner() {
 const styles = {
   banner: {
     overflow: ["hidden", "initial", null, "hidden"],
-    backgroundImage: `url(${BannerBG})`,
+    backgroundImage: `url('https://store-sicombue.s3.us-west-2.amazonaws.com/bannerBg.png')`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: "top left",
     backgroundSize: "cover",
