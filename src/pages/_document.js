@@ -14,6 +14,11 @@ class CustomDocument extends Document {
             http-equiv="Content-Security-Policy"
             content="upgrade-insecure-requests"
           ></meta>
+          <link
+            rel="icon"
+            type="image/svg+xml"
+            href="https://store-sicombue.s3.us-west-2.amazonaws.com/vite.svg"
+          />
         </Head>
         <body>
           <Main />
