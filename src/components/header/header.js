@@ -33,7 +33,7 @@ export default function Header({ className }) {
               </Link>
             ))}
           </Flex>
-          <Link to="http://52.21.60.158/app/login">
+          <a href="http://52.21.60.158/app/login" target="_blank">
             <Button
               className="donate__btn"
               variant="secondary"
@@ -41,7 +41,7 @@ export default function Header({ className }) {
             >
               Ingresar
             </Button>
-          </Link>
+          </a>
           <MobileDrawer />
         </Container>
       </header>
