@@ -6,7 +6,7 @@ import ModalVideo from "react-modal-video";
 import { Link } from "components/link";
 import { FaPlayCircle } from "react-icons/fa";
 //import BannerBG from "assets/bannerBG.png";
-import BannerThumb from "assets/Imagen2.png";
+import BannerThumb from "assets/map2.svg";
 
 export default function Banner() {
   const [videoOpen, setVideoOpen] = useState(false);
@@ -22,10 +22,9 @@ export default function Banner() {
             Unidad de Enfermeria - DASS
           </Heading>
           <Text as="p" variant="heroSecondary">
-            La Dirección de Área de Salud de Sololá (DASS), es la entidad
-            descentralizada del Ministerio de Salud Pública y Asistencia Social
-            (MSPAS) de Guatemala, la cual esta a cargo de las actividades de
-            salud en el departamento de Sololá.
+            La unidad de enfermeria e imnunizaciòn es el departamento encargado
+            del control de los suministros de medicamentos biológicos, insumos y
+            equipos de la instituciòn.
           </Text>
           <Flex>
             <>
@@ -50,7 +49,10 @@ export default function Banner() {
             </Text>
           </Flex>
         </Box>
-        <Image src={BannerThumb} alt="banner" width="100%" height="300" />
+        <Image
+          src="https://coronavirus.test.fr/assets/images/gfx/header-v.png"
+          alt="banner"
+        />
         <Box sx={styles.banner.imageBox}></Box>
       </Container>
     </section>

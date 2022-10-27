@@ -16,7 +16,7 @@ export default function Header({ className }) {
         <Container sx={styles.container}>
           <Logo src={className === "sticky" ? LogoDark : LogoWhite} />
           <Text as="p" sx={styles.text}>
-            SICOMBUE
+            Unidad de Enfermeria - DASS
           </Text>
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
@@ -33,15 +33,15 @@ export default function Header({ className }) {
               </Link>
             ))}
           </Flex>
-
-          <Button
-            className="donate__btn"
-            variant="secondary"
-            aria-label="Get Started"
-          >
-            Ingresar
-          </Button>
-
+          <Link to="http://52.21.60.158/app/login">
+            <Button
+              className="donate__btn"
+              variant="secondary"
+              aria-label="Get Started"
+            >
+              Ingresar
+            </Button>
+          </Link>
           <MobileDrawer />
         </Container>
       </header>

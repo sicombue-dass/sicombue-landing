@@ -18,21 +18,19 @@ export default function IndexPage() {
   const [allActivities, setAllActivities] = React.useState([]);
 
   const getInitialNews = async () => {
-    const response = await fetch("http://localhost:8000/api/v1/news/");
+    const response = await fetch("http://52.21.60.158/api/v1/news/");
     const data = await response.json();
     return data;
   };
 
   const getInitialMisionVison = async () => {
-    const response = await fetch(
-      "http://localhost:8000/api/v1/mission_vision/"
-    );
+    const response = await fetch("http://52.21.60.158/api/v1/mission_vision/");
     const data = await response.json();
     return data.results;
   };
 
   const getInitialActivities = async () => {
-    const response = await fetch("http://localhost:8000/api/v1/activities/");
+    const response = await fetch("http://52.21.60.158/api/v1/activities/");
     const data = await response.json();
     return data;
   };
