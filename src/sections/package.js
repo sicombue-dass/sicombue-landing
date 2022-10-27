@@ -3,6 +3,7 @@ import { jsx, Container, Flex } from "theme-ui";
 import PriceCard from "components/price-card";
 import SectionHeader from "components/section-header";
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
+import { useEffect } from "react";
 //import PatternBG from "assets/patternBG.png";
 
 const packages = [
@@ -16,6 +17,26 @@ const packages = [
   },
 ];
 export default function MisionVision({ data }) {
+  /*
+  const data = null;
+  const getData = () => {
+    fetch("http://52.21.60.158/api/v1/mission_vision/")
+      .then((response) => {
+        response.json().then((result) => {
+          console.log(result);
+          data = result.result;
+        });
+        //console.log(response.json());
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);*/
+  console.log(data);
   return (
     <section id="mision_vision" sx={styles.pricing}>
       <Container>

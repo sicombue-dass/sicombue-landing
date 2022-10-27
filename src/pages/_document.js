@@ -9,12 +9,7 @@ class CustomDocument extends Document {
   render() {
     return (
       <Html lang="en-US">
-        <Head>
-          <meta
-            http-equiv="Content-Security-Policy"
-            content="upgrade-insecure-requests"
-          ></meta>
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
@@ -25,3 +20,8 @@ class CustomDocument extends Document {
 }
 
 export default CustomDocument;
+
+/*<meta
+http-equiv="Content-Security-Policy"
+content="upgrade-insecure-requests"
+></meta>*/
