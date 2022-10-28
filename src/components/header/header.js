@@ -16,7 +16,7 @@ export default function Header({ className }) {
         <Container sx={styles.container}>
           <Logo src={className === "sticky" ? LogoDark : LogoWhite} />
           <Text as="p" sx={styles.text}>
-            Unidad de Enfermeria - DASS
+            Unidad de Enfermería Sololá
           </Text>
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
@@ -39,7 +39,7 @@ export default function Header({ className }) {
               variant="secondary"
               aria-label="Get Started"
             >
-              Ingresar
+              sicombue
             </Button>
           </a>
           <MobileDrawer />

@@ -13,52 +13,26 @@ import NewsImg from "assets/feature/news.svg";
 //import Chat from "assets/feature/chat.svg";
 import { useEffect } from "react";
 
-const data1 = [
+const data = [
   {
     id: 1,
     imgSrc: NewsImg,
-    altText: "noticia 1",
-    title: "salud y bienestar",
-    text: "noticia 1 de salud y bienestar",
+    altText: "salud",
+    title: "Salud",
+    text: "Proyectan que casos de diabetes tipo 1 se duplicarán en el mundo en los próximos 20 años",
+    url: "https://www.univision.com/noticias/salud/diabetes-tipo-1-se-duplicara-en-el-mundo-en-los-proximos-20-anos",
   },
   {
     id: 2,
     imgSrc: NewsImg,
-    altText: "noticia 1",
-    title: "salud y bienestar",
-    text: "noticia 1 de salud y bienestar",
-  },
-  {
-    id: 3,
-    imgSrc: NewsImg,
-    altText: "noticia 1",
-    title: "salud y bienestar",
-    text: "noticia 1 de salud y bienestar",
-  },
-  {
-    id: 4,
-    imgSrc: NewsImg,
-    altText: "noticia 1",
-    title: "salud y bienestar",
-    text: "noticia 1 de salud y bienestar",
-  },
-  {
-    id: 5,
-    imgSrc: NewsImg,
-    altText: "noticia 1",
-    title: "salud y bienestar",
-    text: "noticia 1 de salud y bienestar",
-  },
-  {
-    id: 6,
-    imgSrc: NewsImg,
-    altText: "noticia 1",
-    title: "salud y bienestar",
-    text: "noticia 1 de salud y bienestar",
+    altText: "Salud",
+    title: "Salud",
+    text: "La gripe, el VRS y otros virus en niños tienen a hospitales al borde del colapso: puede que sea apenas el comienzo",
+    url: "https://www.univision.com/noticias/salud/virus-respiratorios-en-ninos-tienen-a-hospitales-al-borde-del-colapso",
   },
 ];
 
-function News({ data }) {
+function News() {
   console.log(data);
 
   return (
@@ -68,13 +42,15 @@ function News({ data }) {
 
         <Grid sx={styles.grid}>
           {data.map((item) => (
-            <FeatureCard
-              key={item.id}
-              src={NewsImg}
-              alt={item.title}
-              title={item.title}
-              text={item.text}
-            />
+            <a href={item.url}>
+              <FeatureCard
+                key={item.id}
+                src={NewsImg}
+                alt={item.title}
+                title={item.title}
+                text={item.text}
+              />
+            </a>
           ))}
         </Grid>
       </Container>

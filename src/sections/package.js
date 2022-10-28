@@ -6,17 +6,17 @@ import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
 import { useEffect } from "react";
 //import PatternBG from "assets/patternBG.png";
 
-const packages = [
+const data = [
   {
     name: "Misión",
-    description: "Nuestra misión ...kk.lkkkw",
+    description: "Nuestra misión es ..",
   },
   {
     name: "Visión",
-    description: "Nuestra visión  ..kskslmwklwl",
+    description: "Nuestra visión  es ..",
   },
 ];
-export default function MisionVision({ data }) {
+export default function MisionVision() {
   /*
   const data = null;
   const getData = () => {
@@ -51,8 +51,12 @@ export default function MisionVision({ data }) {
             flexWrap: ["wrap", null, null, "nowrap"],
           }}
         >
-          <PriceCard data={{ name: "mision", description: data.misiion }} />
-          <PriceCard data={{ name: "vision", description: data.vision }} />
+          <PriceCard
+            data={{ name: "Misión", description: data[0].description }}
+          />
+          <PriceCard
+            data={{ name: "Visión", description: data[1].description }}
+          />
         </Flex>
       </Container>
     </section>

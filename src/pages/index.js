@@ -30,7 +30,12 @@ export default function IndexPage() {
   };
 
   const getInitialActivities = async () => {
-    const response = await fetch("http://52.21.60.158/api/v1/activities/");
+    const response = await fetch("http://52.21.60.158/api/v1/activities/", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
     const data = await response.json();
     return data;
   };
@@ -44,9 +49,9 @@ export default function IndexPage() {
     console.log(resultMisionVison);
     setMisionVison(resultMisionVison[0]);
   };
-  useEffect(() => {
-    getInitialData();
-  }, []);
+  //useEffect(() => {
+  //  getInitialData();
+  //}, []);
 
   return (
     <ThemeProvider theme={theme}>

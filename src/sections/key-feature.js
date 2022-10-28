@@ -13,7 +13,7 @@ const data = [
     imgSrc: Vector,
     altText: "Mision",
     title: "Misión",
-    text: "nuestra mision .......",
+    text: "nuestra mision es",
   },
   {
     id: 2,

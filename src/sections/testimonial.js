@@ -10,26 +10,29 @@ import Avatar2 from "assets/testimonial/avatar2.png";
 import Avatar3 from "assets/testimonial/avatar3.png";
 import Avatar4 from "assets/testimonial/avatar4.png";
 
-const data1 = [
+const data = [
   {
     id: 1,
-    title: "Actividad 1",
-    description: "descripcion recomendacion.",
+    title: "Covid-19",
+    text: "Sigue el plan de acción para la prevención y control del COVID-19",
+    picture_uri:
+      "https://agn.gt/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-08-at-6.24.33-PM-1-e1625796630882.jpeg",
+    date: "2021-07-08T18:00:00.000Z",
   },
   {
     id: 2,
-    title: "Actividad 2",
-    description: "descripcion recomendacion.",
+    title: "Capacitación",
+    text: "Personal de enfermería capacitado en el manejo de COVID-19",
+    picture_uri:
+      "https://agn.gt/wp-content/uploads/2020/09/OPS-capacitacion-HSL-e1600376785236.jpeg",
+    date: "2020-09-15T18:00:00.000Z",
   },
   {
     id: 3,
-    title: "Actividad 4",
-    description: "descripcion recomendacion.",
-  },
-  {
-    id: 4,
-    title: "Actividad 3",
-    description: "descripcion recomendacion.",
+    title: "Semana de la salud",
+    text: "Semana de la salud 2022",
+    picture_uri: "https://larazon.co/wp-content/uploads/2019/06/9-1132x670.jpg",
+    date: "2022-07-08T18:00:00.000Z",
   },
 ];
 
@@ -68,7 +71,7 @@ const formatDate = (date) => {
   return [day, month, year].join("/");
 };
 
-export default function TestimonialCard({ data }) {
+export default function TestimonialCard() {
   console.log(data);
   return (
     <section id="actividades" sx={{ variant: "section.testimonial" }}>

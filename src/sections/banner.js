@@ -19,12 +19,11 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Unidad de Enfermeria - DASS
+            Unidad de Enfermeria Sololá
           </Heading>
           <Text as="p" variant="heroSecondary">
-            La unidad de enfermeria e imnunizaciòn es el departamento encargado
-            del control de los suministros de medicamentos biológicos, insumos y
-            equipos de la instituciòn.
+            La unidad de enfermería es el departamento encargado de la atención
+            integral y oportuna en enfermería del servicio de salud.
           </Text>
           <Flex>
             <>
@@ -45,7 +44,7 @@ export default function Banner() {
           </Flex>
           <Flex sx={styles.sponsorBox}>
             <Text sx={styles.sponsorTitle}>
-              Forma parte de la Direccion de Area de Salud de Solola
+              Forma parte de la Direccion de área de Salud de Sololá
             </Text>
           </Flex>
         </Box>
