@@ -15,9 +15,7 @@ export default function Header({ className }) {
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
           <Logo src={className === "sticky" ? LogoDark : LogoWhite} />
-          <Text as="p" sx={styles.text}>
-            Unidad de Enfermería Sololá
-          </Text>
+          <Text as="p" sx={styles.text}></Text>
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
               <Link
